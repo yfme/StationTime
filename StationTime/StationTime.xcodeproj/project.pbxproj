@@ -16,6 +16,11 @@
 		CE94C11813DA7615008D6FFC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE94C11613DA7615008D6FFC /* MainWindow.xib */; };
 		CE94C11B13DA7615008D6FFC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94C11A13DA7615008D6FFC /* RootViewController.m */; };
 		CE94C11E13DA7615008D6FFC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE94C11C13DA7615008D6FFC /* RootViewController.xib */; };
+		CE94C12B13DA7F64008D6FFC /* routesy.db in Resources */ = {isa = PBXBuildFile; fileRef = CE94C12A13DA7F64008D6FFC /* routesy.db */; };
+		CE94C12D13DA7FC3008D6FFC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94C12C13DA7FC3008D6FFC /* SystemConfiguration.framework */; };
+		CE94C13113DA7FD9008D6FFC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94C12E13DA7FD8008D6FFC /* CoreLocation.framework */; };
+		CE94C13213DA7FD9008D6FFC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94C12F13DA7FD9008D6FFC /* libsqlite3.dylib */; };
+		CE94C13313DA7FD9008D6FFC /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94C13013DA7FD9008D6FFC /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		CE94C11913DA7615008D6FFC /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		CE94C11A13DA7615008D6FFC /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		CE94C11D13DA7615008D6FFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		CE94C12A13DA7F64008D6FFC /* routesy.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = routesy.db; sourceTree = "<group>"; };
+		CE94C12C13DA7FC3008D6FFC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CE94C12E13DA7FD8008D6FFC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CE94C12F13DA7FD9008D6FFC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CE94C13013DA7FD9008D6FFC /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE94C13113DA7FD9008D6FFC /* CoreLocation.framework in Frameworks */,
+				CE94C13213DA7FD9008D6FFC /* libsqlite3.dylib in Frameworks */,
+				CE94C13313DA7FD9008D6FFC /* libxml2.dylib in Frameworks */,
+				CE94C12D13DA7FC3008D6FFC /* SystemConfiguration.framework in Frameworks */,
 				CE94C10513DA7615008D6FFC /* UIKit.framework in Frameworks */,
 				CE94C10713DA7615008D6FFC /* Foundation.framework in Frameworks */,
 				CE94C10913DA7615008D6FFC /* CoreGraphics.framework in Frameworks */,
@@ -69,6 +83,10 @@
 		CE94C10313DA7615008D6FFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE94C12F13DA7FD9008D6FFC /* libsqlite3.dylib */,
+				CE94C13013DA7FD9008D6FFC /* libxml2.dylib */,
+				CE94C12E13DA7FD8008D6FFC /* CoreLocation.framework */,
+				CE94C12C13DA7FC3008D6FFC /* SystemConfiguration.framework */,
 				CE94C10413DA7615008D6FFC /* UIKit.framework */,
 				CE94C10613DA7615008D6FFC /* Foundation.framework */,
 				CE94C10813DA7615008D6FFC /* CoreGraphics.framework */,
@@ -93,6 +111,7 @@
 		CE94C10B13DA7615008D6FFC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE94C12A13DA7F64008D6FFC /* routesy.db */,
 				CE94C10C13DA7615008D6FFC /* StationTime-Info.plist */,
 				CE94C10D13DA7615008D6FFC /* InfoPlist.strings */,
 				CE94C11013DA7615008D6FFC /* StationTime-Prefix.pch */,
@@ -154,6 +173,7 @@
 				CE94C10F13DA7615008D6FFC /* InfoPlist.strings in Resources */,
 				CE94C11813DA7615008D6FFC /* MainWindow.xib in Resources */,
 				CE94C11E13DA7615008D6FFC /* RootViewController.xib in Resources */,
+				CE94C12B13DA7F64008D6FFC /* routesy.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +260,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StationTime/StationTime-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
 				INFOPLIST_FILE = "StationTime/StationTime-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -253,7 +275,9 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StationTime/StationTime-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
 				INFOPLIST_FILE = "StationTime/StationTime-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
