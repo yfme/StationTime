@@ -1,0 +1,286 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE94C10513DA7615008D6FFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94C10413DA7615008D6FFC /* UIKit.framework */; };
+		CE94C10713DA7615008D6FFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94C10613DA7615008D6FFC /* Foundation.framework */; };
+		CE94C10913DA7615008D6FFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94C10813DA7615008D6FFC /* CoreGraphics.framework */; };
+		CE94C10F13DA7615008D6FFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE94C10D13DA7615008D6FFC /* InfoPlist.strings */; };
+		CE94C11213DA7615008D6FFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94C11113DA7615008D6FFC /* main.m */; };
+		CE94C11513DA7615008D6FFC /* StationTimeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94C11413DA7615008D6FFC /* StationTimeAppDelegate.m */; };
+		CE94C11813DA7615008D6FFC /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE94C11613DA7615008D6FFC /* MainWindow.xib */; };
+		CE94C11B13DA7615008D6FFC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94C11A13DA7615008D6FFC /* RootViewController.m */; };
+		CE94C11E13DA7615008D6FFC /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE94C11C13DA7615008D6FFC /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE94C10013DA7615008D6FFC /* StationTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StationTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE94C10413DA7615008D6FFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE94C10613DA7615008D6FFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE94C10813DA7615008D6FFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE94C10C13DA7615008D6FFC /* StationTime-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StationTime-Info.plist"; sourceTree = "<group>"; };
+		CE94C10E13DA7615008D6FFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE94C11013DA7615008D6FFC /* StationTime-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StationTime-Prefix.pch"; sourceTree = "<group>"; };
+		CE94C11113DA7615008D6FFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE94C11313DA7615008D6FFC /* StationTimeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationTimeAppDelegate.h; sourceTree = "<group>"; };
+		CE94C11413DA7615008D6FFC /* StationTimeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StationTimeAppDelegate.m; sourceTree = "<group>"; };
+		CE94C11713DA7615008D6FFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		CE94C11913DA7615008D6FFC /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		CE94C11A13DA7615008D6FFC /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CE94C11D13DA7615008D6FFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE94C0FD13DA7615008D6FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE94C10513DA7615008D6FFC /* UIKit.framework in Frameworks */,
+				CE94C10713DA7615008D6FFC /* Foundation.framework in Frameworks */,
+				CE94C10913DA7615008D6FFC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE94C0F513DA7615008D6FFC = {
+			isa = PBXGroup;
+			children = (
+				CE94C10A13DA7615008D6FFC /* StationTime */,
+				CE94C10313DA7615008D6FFC /* Frameworks */,
+				CE94C10113DA7615008D6FFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE94C10113DA7615008D6FFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE94C10013DA7615008D6FFC /* StationTime.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE94C10313DA7615008D6FFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE94C10413DA7615008D6FFC /* UIKit.framework */,
+				CE94C10613DA7615008D6FFC /* Foundation.framework */,
+				CE94C10813DA7615008D6FFC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE94C10A13DA7615008D6FFC /* StationTime */ = {
+			isa = PBXGroup;
+			children = (
+				CE94C11313DA7615008D6FFC /* StationTimeAppDelegate.h */,
+				CE94C11413DA7615008D6FFC /* StationTimeAppDelegate.m */,
+				CE94C11613DA7615008D6FFC /* MainWindow.xib */,
+				CE94C11913DA7615008D6FFC /* RootViewController.h */,
+				CE94C11A13DA7615008D6FFC /* RootViewController.m */,
+				CE94C11C13DA7615008D6FFC /* RootViewController.xib */,
+				CE94C10B13DA7615008D6FFC /* Supporting Files */,
+			);
+			path = StationTime;
+			sourceTree = "<group>";
+		};
+		CE94C10B13DA7615008D6FFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE94C10C13DA7615008D6FFC /* StationTime-Info.plist */,
+				CE94C10D13DA7615008D6FFC /* InfoPlist.strings */,
+				CE94C11013DA7615008D6FFC /* StationTime-Prefix.pch */,
+				CE94C11113DA7615008D6FFC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE94C0FF13DA7615008D6FFC /* StationTime */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE94C12113DA7615008D6FFC /* Build configuration list for PBXNativeTarget "StationTime" */;
+			buildPhases = (
+				CE94C0FC13DA7615008D6FFC /* Sources */,
+				CE94C0FD13DA7615008D6FFC /* Frameworks */,
+				CE94C0FE13DA7615008D6FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StationTime;
+			productName = StationTime;
+			productReference = CE94C10013DA7615008D6FFC /* StationTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE94C0F713DA7615008D6FFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = appxyz.com;
+			};
+			buildConfigurationList = CE94C0FA13DA7615008D6FFC /* Build configuration list for PBXProject "StationTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE94C0F513DA7615008D6FFC;
+			productRefGroup = CE94C10113DA7615008D6FFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE94C0FF13DA7615008D6FFC /* StationTime */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE94C0FE13DA7615008D6FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE94C10F13DA7615008D6FFC /* InfoPlist.strings in Resources */,
+				CE94C11813DA7615008D6FFC /* MainWindow.xib in Resources */,
+				CE94C11E13DA7615008D6FFC /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE94C0FC13DA7615008D6FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE94C11213DA7615008D6FFC /* main.m in Sources */,
+				CE94C11513DA7615008D6FFC /* StationTimeAppDelegate.m in Sources */,
+				CE94C11B13DA7615008D6FFC /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE94C10D13DA7615008D6FFC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE94C10E13DA7615008D6FFC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE94C11613DA7615008D6FFC /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE94C11713DA7615008D6FFC /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		CE94C11C13DA7615008D6FFC /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE94C11D13DA7615008D6FFC /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE94C11F13DA7615008D6FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE94C12013DA7615008D6FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		CE94C12213DA7615008D6FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StationTime/StationTime-Prefix.pch";
+				INFOPLIST_FILE = "StationTime/StationTime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE94C12313DA7615008D6FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StationTime/StationTime-Prefix.pch";
+				INFOPLIST_FILE = "StationTime/StationTime-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE94C0FA13DA7615008D6FFC /* Build configuration list for PBXProject "StationTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE94C11F13DA7615008D6FFC /* Debug */,
+				CE94C12013DA7615008D6FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE94C12113DA7615008D6FFC /* Build configuration list for PBXNativeTarget "StationTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE94C12213DA7615008D6FFC /* Debug */,
+				CE94C12313DA7615008D6FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE94C0F713DA7615008D6FFC /* Project object */;
+}
