@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Station.h"
 
 @interface PredictionTableViewController : UITableViewController {
     
+    Station *station;
+    
 }
+
+@property (nonatomic, retain) Station *station;
 
 @end

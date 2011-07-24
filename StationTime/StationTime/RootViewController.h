@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PredictionTableViewController.h"
 
 @interface RootViewController : UITableViewController {
     NSMutableArray *stations;
+    PredictionTableViewController *predictionController;
 }
 
 @property (nonatomic, retain) NSMutableArray *stations;
+@property (nonatomic, retain) IBOutlet PredictionTableViewController *predictionController;
 
 @end

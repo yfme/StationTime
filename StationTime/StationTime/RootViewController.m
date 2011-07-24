@@ -11,7 +11,7 @@
 #import "Station.h"
 
 @implementation RootViewController
-@synthesize stations;
+@synthesize stations, predictionController;
 
 - (void)viewDidLoad
 {
@@ -153,13 +153,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-    // ...
+    Station *selectionStation = [self.stations objectAtIndex:indexPath.row];
+    self.predictionController.station = selectionStation;
     // Pass the selected object to the new view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
-	*/
+    [self.navigationController pushViewController:self.predictionController animated:YES];
+	
 }
 
 - (void)didReceiveMemoryWarning
