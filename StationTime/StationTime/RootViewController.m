@@ -7,12 +7,50 @@
 //
 
 #import "RootViewController.h"
+#import <sqlite3.h>
+#import "Station.h"
 
 @implementation RootViewController
+@synthesize stations;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //从静态数据库加载车站列表
+    self.stations = [NSMutableArray array];
+    
+    sqlite3 *database;
+    sqlite3_stmt *statement;
+    
+    NSString *dbPath = [[NSBundle mainBundle] pathForResource:@"routesy" ofType:@"db"];
+    
+    if (sqlite3_open([dbPath UTF8String], &database) == SQLITE_OK) {
+        char *sql = "SELECT id, name, lat, lon FROM stations";
+        if (sqlite3_prepare_v2(database, sql, -1, &statement, NULL) == SQLITE_OK) {
+            
+            //迭代处理每一行
+            while (sqlite3_step(statement) == SQLITE_ROW) {
+                const char* station_id = (const char*)sqlite3_column_text(statement, 0);
+                const char* station_name = (const char*)sqlite3_column_text(statement, 1);
+                double lat = sqlite3_column_double(statement, 2);
+                double lon = sqlite3_column_double(statement, 3);
+                
+                Station *station = [[Station alloc] init];
+                station.stationId = [NSString stringWithUTF8String:station_id];
+                station.name = [NSString stringWithUTF8String:station_name];
+                station.latitude = lat;
+                station.longitude = lon;
+                
+                [self.stations addObject:station];
+                [station release];
+            }
+            // This is in the book, but not in the sample and the compiler hates it.
+			// so out it goes
+			//sqlite3_finalize(statement);
+        }
+        sqlite3_close(database);
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,20 +89,24 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return [self.stations count];
 }
 
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    static NSString *CellIdentifier = @"Cell";
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"station";
+	Station *station = [self.stations objectAtIndex:indexPath.row];
+	
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
     }
-
-    // Configure the cell.
+    
+	// Set up the cell.
+	cell.textLabel.text = station.name;
+    
     return cell;
 }
 

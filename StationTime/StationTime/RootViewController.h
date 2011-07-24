@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UITableViewController {
-
+    NSMutableArray *stations;
 }
 
+@property (nonatomic, retain) NSMutableArray *stations;
 
 @end

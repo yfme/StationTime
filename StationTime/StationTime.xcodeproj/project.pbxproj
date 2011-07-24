@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE32574F13DC15FA009A2596 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = CE32574E13DC15FA009A2596 /* Station.m */; };
+		CE32575213DC1615009A2596 /* Prediction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE32575113DC1615009A2596 /* Prediction.m */; };
+		CE32575613DC1A3F009A2596 /* PredictionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE32575513DC1A3F009A2596 /* PredictionTableViewController.m */; };
 		CE94C10513DA7615008D6FFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94C10413DA7615008D6FFC /* UIKit.framework */; };
 		CE94C10713DA7615008D6FFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94C10613DA7615008D6FFC /* Foundation.framework */; };
 		CE94C10913DA7615008D6FFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94C10813DA7615008D6FFC /* CoreGraphics.framework */; };
@@ -24,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE32574D13DC15FA009A2596 /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		CE32574E13DC15FA009A2596 /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		CE32575013DC1615009A2596 /* Prediction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prediction.h; sourceTree = "<group>"; };
+		CE32575113DC1615009A2596 /* Prediction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prediction.m; sourceTree = "<group>"; };
+		CE32575413DC1A3F009A2596 /* PredictionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredictionTableViewController.h; sourceTree = "<group>"; };
+		CE32575513DC1A3F009A2596 /* PredictionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredictionTableViewController.m; sourceTree = "<group>"; };
 		CE94C10013DA7615008D6FFC /* StationTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StationTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE94C10413DA7615008D6FFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE94C10613DA7615008D6FFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,6 +72,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE32574B13DC15C4009A2596 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CE32574D13DC15FA009A2596 /* Station.h */,
+				CE32574E13DC15FA009A2596 /* Station.m */,
+				CE32575013DC1615009A2596 /* Prediction.h */,
+				CE32575113DC1615009A2596 /* Prediction.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		CE32575313DC19C4009A2596 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE32575413DC1A3F009A2596 /* PredictionTableViewController.h */,
+				CE32575513DC1A3F009A2596 /* PredictionTableViewController.m */,
+				CE94C11913DA7615008D6FFC /* RootViewController.h */,
+				CE94C11A13DA7615008D6FFC /* RootViewController.m */,
+				CE94C11C13DA7615008D6FFC /* RootViewController.xib */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
 		CE94C0F513DA7615008D6FFC = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +129,11 @@
 		CE94C10A13DA7615008D6FFC /* StationTime */ = {
 			isa = PBXGroup;
 			children = (
+				CE32575313DC19C4009A2596 /* controller */,
+				CE32574B13DC15C4009A2596 /* model */,
 				CE94C11313DA7615008D6FFC /* StationTimeAppDelegate.h */,
 				CE94C11413DA7615008D6FFC /* StationTimeAppDelegate.m */,
 				CE94C11613DA7615008D6FFC /* MainWindow.xib */,
-				CE94C11913DA7615008D6FFC /* RootViewController.h */,
-				CE94C11A13DA7615008D6FFC /* RootViewController.m */,
-				CE94C11C13DA7615008D6FFC /* RootViewController.xib */,
 				CE94C10B13DA7615008D6FFC /* Supporting Files */,
 			);
 			path = StationTime;
@@ -187,6 +218,9 @@
 				CE94C11213DA7615008D6FFC /* main.m in Sources */,
 				CE94C11513DA7615008D6FFC /* StationTimeAppDelegate.m in Sources */,
 				CE94C11B13DA7615008D6FFC /* RootViewController.m in Sources */,
+				CE32574F13DC15FA009A2596 /* Station.m in Sources */,
+				CE32575213DC1615009A2596 /* Prediction.m in Sources */,
+				CE32575613DC1A3F009A2596 /* PredictionTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +294,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StationTime/StationTime-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "StationTime/StationTime-Info.plist";
-				OTHER_LDFLAGS = "-lxml2";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,9 +309,9 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StationTime/StationTime-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "StationTime/StationTime-Info.plist";
-				OTHER_LDFLAGS = "-lxml2";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -303,6 +337,7 @@
 				CE94C12313DA7615008D6FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
